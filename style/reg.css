@@ -1,0 +1,318 @@
+  @import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+  body {
+      background: #171719;
+      margin-top: 30px;
+  }
+
+  * {
+      margin: 0;
+      padding: 0;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+  }
+
+  #politics {
+    color: #A9A9A9;
+  }
+
+  .wrapp {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      /* border: 1px solid green; */
+      justify-content: center;
+      align-items: center;
+  }
+
+  .content-box {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      width: 90%;
+      height: 100%;
+      /* border: 1px solid red; */
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .logo {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      width: 170px;
+      height: 40px;
+      /* border: 1px solid orange; */
+      margin-bottom: 40px;
+  }
+
+  .logo img {
+      width: 170px;
+      height: 40px;
+  }
+
+  .box-head {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      width: 100%;
+      height: auto;
+      /* border: 1px solid blue; */
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .box-head h1 {
+      font-family: 'PT Mono', monospace;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 42px;
+      line-height: 47px;
+      color: #FFFFFF;
+      margin-bottom: 20px
+  }
+
+  .predecrip {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      /* border: 1px dashed red; */
+      width: auto;
+      height: auto;
+  }
+
+  .predecrip img {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+  }
+
+  .predecrip span {
+      font-family: 'PT Mono', monospace;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      color: #40FFD4;
+  }
+
+  .box-form {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      /* border: 1px dashed #40FFD4; */
+      margin-top: 30px;
+  }
+
+  .box-form form {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      width: 100%;
+      height: auto;
+      /* border: 1px dashed red; */
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .box-form input {
+      width: 300px;
+      height: 60px;
+      background: #303030;
+      border: 2px solid #303030;
+      border-radius: 4px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      padding-left: 12px;
+      font-family: 'PT Mono', monospace;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 18px;
+      color: #FFFFFF;
+  }
+
+  input::placeholder {
+      font-family: 'PT Mono', monospace;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 18px;
+      color: #A9A9A9;
+  }
+
+  input:last-child {
+      margin-bottom: 10px;
+  }
+
+  input:last-of-type {
+      margin-bottom: 20px;
+  }
+
+  input:focus {
+      outline: none;
+  }
+
+  .box-form p {
+      font-family: 'PT Mono', monospace;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      color: #FFFFFF;
+  }
+
+  .box-form button {
+      margin-top: 30px;
+      width: 300px;
+      height: 60px;
+      background: #2EDBB4;
+      border-radius: 4px;
+      border: 2px solid #2EDBB4;
+      font-family: 'PT Mono', monospace;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 20px;
+      text-align: center;
+      color: #171719;
+  }
+
+  .box-form button:hover {
+      background: #3CC0A2;
+      border: 2px solid #3CC0A2;
+  }
+
+  button:focus {
+      outline: none
+  }
+
+  small {
+      width: 300px;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      color: #D80F0F;
+      font-family: 'PT Mono', monospace;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      margin-top: -10px;
+      margin-bottom: 20px;
+      display: none;
+  }
+
+  .success {
+      border: 1px solid #5BFFDA !important;
+  }
+
+  .error {
+      border: 1px solid #D80F0F !important;
+  }
+
+
+
+  .check {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      width: 300px;
+      height: 50px;
+      /* border: 1px dashed orange; */
+      margin-top: 20px;
+  }
+  /* .check label,a {
+    font-family: 'PT Mono', monospace;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 13px;
+
+color: #A9A9A9;
+    }
+
+    .check a:hover {
+      color:#FFFFFF;
+
+    } */
+  /* .custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+
+} */
+  /* для элемента input c type="checkbox" */
+
+  .custom-checkbox>input {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+  }
+  /* для элемента label, связанного с .custom-checkbox */
+
+  .custom-checkbox>span {
+      display: inline-flex;
+      flex-direction: row;
+      align-items: center;
+      user-select: none;
+      color: #A9A9A9;
+  }
+  /* Да-да это я сделаль */
+
+  .custom-checkbox span a {
+      display: contents;
+  }
+  /* создание в label псевдоэлемента before со следующими стилями */
+
+  .custom-checkbox>span::before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      flex-grow: 0;
+      border: 1px solid #5BFFDA;
+      background-color: #5BFFDA;
+      border-radius: 4px;
+      margin-right: 20px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      /* background-size: 50% 50%; Он ломает галочку*/
+  }
+  /* стили при наведении курсора на checkbox */
+
+  .custom-checkbox>input:not(:disabled):not(:checked)+span:hover::before {
+      border-color: #3CC0A2;
+      background-color: #3CC0A2;
+  }
+  /* стили для активного чекбокса (при нажатии на него) */
+
+  .custom-checkbox>input:not(:disabled):active+span::before {
+      background-color: #5BFFDA;
+      border-color: #5BFFDA;
+  }
+  /* стили для чекбокса, находящегося в состоянии checked */
+
+  .custom-checkbox>input:checked+span::before {
+      background-color: #5BFFDA;
+      border-color: #5BFFDA;
+      background-image: url("../assets/check.svg");
+  }

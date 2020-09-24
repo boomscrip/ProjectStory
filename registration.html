@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Форма регистрации</title>
+  <link rel="stylesheet" href="./style/reg.css">
+  <link rel="stylesheet" href="./style/true.css" type="text/css">
+</head>
+
+<body>
+  <div class="wrapp" id="wrapp">
+    <div class="content-box">
+      <div class="logo">
+        <img src="./assets/logo.svg" alt="Логотип компании REBRAIN">
+      </div>
+      <div class="box-head">
+        <h1>Регистрация</h1>
+        <div class="predecrip">
+          <img src="./assets/checkmark.svg" alt="">
+          <span>
+            Запись практикума NGINX by REBRAIN в подарок за регистрацию!
+          </span>
+
+        </div>
+      </div>
+
+      <div class="box-form">
+        <form id="form">
+
+          <input id="username" type="text" name="" value="" placeholder="Имя">
+          <small id="small1">Заполните поле</small>
+          <input id="useremail" type="text" name="" value="" placeholder="E-mail">
+          <small id="small2">Заполните поле</small>
+          <input id="userphone" type="tel" name="" value="" placeholder="Телефон">
+          <small id="small3">Заполните поле</small>
+        </form>
+        <p>Отправим 1 смс о начале практикума</p>
+
+        <button type="submit" id="btn-submit">
+          Регистрация
+        </button>
+
+        <div class="check">
+
+          <label class="custom-checkbox">
+            <input id="userCheck" type="checkbox" name="color-1" value="">
+            <span id="cheking">Я согласен с условиями обработки<br><a href="" id="politics">персональных данных</a></span>
+          </label>
+
+        </div>
+        <small id="small4">Заполните поле</small>
+        <!--
+<div class="check">
+  <input type="checkbox" class="custom-checkbox" id="politics" name="politics" value="yes">
+  <label for="politics">Я согласен с условиями обработки&nbsp;<a href="">персональных данных</a></label>
+</div> -->
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- //блок успешной регистрации  -->
+
+  <div class="container_request" id="container_request">
+      <div class="logo-ok">
+          <img class="logo" src="./assets/logo_rebrain.svg" alt="ReBrain">
+          <img class="done" src="./assets/done.svg" alt="">
+      </div>
+      <span class="good">Заявка отправлена!</span>
+      <span class="waiting">Спасибо, мы скоро с вами свяжемся</span>
+      <button class="confirm" onclick="locationHref()">Ок</button>
+  </div>
+
+
+
+  <script type="text/javascript" src="./send.js">
+  </script>
+
+
+</body>
+
+</html>

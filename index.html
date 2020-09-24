@@ -1,0 +1,361 @@
+<!-- -->
+<!doctype html>
+<html amp lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+  <title>Вебинар от REBRAIN</title>
+  <meta name="description" content="">
+  <script async custom-element="amp-audio" src="https://cdn.ampproject.org/v0/amp-audio-0.1.js"></script>
+  <script async custom-element="amp-gfycat" src="https://cdn.ampproject.org/v0/amp-gfycat-0.1.js"></script>
+  <script async custom-element="amp-google-vrview-image" src="https://cdn.ampproject.org/v0/amp-google-vrview-image-0.1.js"></script>
+  <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <link rel="canonical" href="https://amp.dev/documentation/examples/multimedia-animations/supported_media_types_in_amp_stories/index.html">
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+    }
+
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+      to {
+        visibility: visible
+      }
+    }
+
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+      to {
+        visibility: visible
+      }
+    }
+
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+      to {
+        visibility: visible
+      }
+    }
+
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+      to {
+        visibility: visible
+      }
+    }
+
+    @keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+      to {
+        visibility: visible
+      }
+    }
+  </style><noscript>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none
+      }
+    </style>
+  </noscript>
+
+  <style amp-custom>
+    @import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    amp-story-page h1 {
+      background: white;
+      padding: 8px 16px;
+      border-radius: 8px;
+
+    }
+
+    amp-story-page {
+      background: black;
+    }
+
+    amp-story-grid-layer {
+      align-items: center;
+      justify-items: center;
+    }
+  </style>
+
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+  <amp-story standalone title="Stories in AMP - Media" publisher="AMP Project" publisher-logo-src="https://amp.dev/favicons/coast-228x228.png" poster-portrait-src="https://picsum.photos/300/400" poster-square-src="https://picsum.photos/300/300"
+    poster-landscape-src="https://picsum.photos/400/300">
+
+
+    <amp-story-page id="amp-video">
+      <amp-story-grid-layer template="fill">
+        <amp-video autoplay loop grid-area="middle-third" width="720" height="1280" poster="привет " layout="responsive">
+          <source src="./assets/hacker_2.mp4" type="video/mp4">
+        </amp-video>
+      </amp-story-grid-layer>
+
+      <amp-story-grid-layer template="fill">
+        <div class="wrapp">
+          <div class="story">
+            <div class="story-one__box">
+              <span animate-in="whoosh-in-left" animate-in-duration="1s" animate-in-delay="">Сисадмин?</span>
+              <span id="marg" animate-in="whoosh-in-left" animate-in-duration="1s" animate-in-delay="2s">DevOps?</span>
+              <p animate-in="whoosh-in-left" animate-in-duration="1s" animate-in-delay="4s">Интересуешься инфраструктурой?</p>
+            </div>
+          </div>
+        </div>
+      </amp-story-grid-layer>
+    </amp-story-page>
+
+    <amp-story-page id="slide-2">
+
+      <amp-story-grid-layer template="fill">
+        <amp-img src="./assets/7.jpg" width="720" height="1280" layout="responsive">
+        </amp-img>
+      </amp-story-grid-layer>
+
+      <amp-story-grid-layer template="fill">
+        <div class="wrapp_logo">
+          <div class="logo_box_1">
+            <div class="logo_1">
+              <img src="./assets/logo1.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </amp-story-grid-layer>
+
+      <amp-story-grid-layer template="fill">
+        <div class="wrapp">
+          <div class="story">
+            <div class="story-third__box">
+              <span animate-in="fly-in-bottom" animate-in-duration="1s">Одно из крупнейших сообществ по IT Инфраструктуре в СНГ</span>
+              <span animate-in="fly-in-bottom" animate-in-duration="1s" animate-in-delay="1s">Более 20 000 единомышленников</span>
+              <span animate-in="fly-in-bottom" animate-in-duration="1s" animate-in-delay="2s">Онлайн мероприятия на 1 000+ участников</span>
+              <span animate-in="fly-in-bottom" animate-in-duration="1s" animate-in-delay="3s">Мероприятия с Yandex.Cloud, AWS, Tarantool, REG.RU <br>и др.</span>
+            </div>
+          </div>
+        </div>
+      </amp-story-grid-layer>
+
+    </amp-story-page>
+
+
+    <amp-story-page id="slide-3">
+
+      <amp-story-grid-layer template="fill">
+
+        <amp-img src="./assets/32.jpg" width="720" height="1280" layout="responsive">
+        </amp-img>
+
+      </amp-story-grid-layer>
+
+
+      <amp-story-grid-layer template="fill">
+
+        <div class="warapp_header">
+          <div class="header_box">
+            <span>12 Августа • Вторник 19:00 по Мск</span>
+          </div>
+        </div>
+
+      </amp-story-grid-layer>
+
+
+      <amp-story-grid-layer template="fill">
+        <div class="wrapp">
+          <div class="story">
+            <div class="story-fife__box">
+              <div class="story-fife__box-logo">
+                <img src="./assets/kuber.svg" alt="">
+              </div>
+              <p>• 120 минут практики</p>
+              <p>• Работаем в консоли </p>
+              <p>• Прямой эфир</p>
+              <p>• Дебажим при вас</p>
+              <p>• Задаете любые вопросы</p>
+            </div>
+          </div>
+        </div>
+      </amp-story-grid-layer>
+
+    </amp-story-page>
+
+    <amp-story-page id="slide-4">
+      <amp-story-grid-layer template="fill">
+        <div class="wrapp_back">
+          <div class="rectangle-two"></div>
+        </div>
+      </amp-story-grid-layer>
+
+      <amp-story-grid-layer template="fill">
+        <div class="wrapp_logo">
+          <div class="logo_box-left">
+            <div class="logo">
+              <img src="./assets/logo.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </amp-story-grid-layer>
+
+      <amp-story-grid-layer template="fill">
+        <div class="wrapp">
+          <div class="story">
+            <div class="story-end">
+              <span id="headspan">Ускоряем ваше приложение с tarantool</span>
+              <span>Темы открытого практикума:</span>
+              <p>● Пишем небольшое API на golang для работы с базой</p>
+              <p>● Проводим нагрузочное тестирование и определяем узкие места</p>
+              <p>● Внедряем tarantool с реплицированием данных из базы</p>
+              <p>● Тестируем итоговый вариант и обсуждаем варианты будущих изменений</p>
+            </div>
+          </div>
+        </div>
+      </amp-story-grid-layer>
+
+    </amp-story-page>
+
+
+    <amp-story-page id="slide-5">
+      <amp-story-grid-layer template="fill">
+        <div class="wrapp_back">
+          <div class="rectangle"></div>
+        </div>
+      </amp-story-grid-layer>
+
+      <amp-story-grid-layer template="fill">
+        <div class="wrapp_back">
+          <div class="box-circle">
+            <div class="circle">
+              <img src="./assets/1.png" alt="">
+            </div>
+          </div>
+        </div>
+      </amp-story-grid-layer>
+
+      <amp-story-grid-layer template="fill">
+        <div class="wrapp_logo">
+          <div class="logo_box">
+            <div class="logo">
+              <img src="./assets/logo.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </amp-story-grid-layer>
+
+      <amp-story-grid-layer template="fill">
+        <div class="wrapp">
+          <div class="story">
+            <div class="story-two__box">
+              <span id="pred_discrip">СПИКЕР</span>
+              <span id="speaker">Василий Озеров</span>
+              <p>● Руководит международной командой в рамках своего агентства Fevlake  </p>
+              <p>● Более 5 лет занимается DevOps</p>
+              <p>● Создатель канала по DevOps - <a href="https://t.me/drunkdevops">t.me/drunkdevops</a> </p>
+              <p>● Начинал работать системным администратором в НИЯУ МИФИ</p>
+              <p>● На данный момент работает с компаниями: KupiKupon, InMyRoom, News360 и др</p>
+            </div>
+          </div>
+        </div>
+      </amp-story-grid-layer>
+    </amp-story-page>
+
+
+
+
+
+    <amp-story-page id="slide-6">
+
+      <amp-story-grid-layer template="fill">
+
+        <amp-img src="./assets/12.jpg" width="720" height="1280" layout="responsive">
+        </amp-img>
+
+      </amp-story-grid-layer>
+
+
+      <amp-story-grid-layer template="fill">
+
+        <div class="warapp_header">
+          <div class="header_box" animate-in="fly-in-left" animate-in-duration="2s" style="transform: translate(-1280px, 0px);">
+            <span>12 Августа • Вторник 19:00 по Мск</span>
+          </div>
+        </div>
+
+      </amp-story-grid-layer>
+
+
+      <!-- <amp-story-grid-layer template="fill">
+
+
+
+  <div class="wrapp">
+    <div class="story">
+
+      <div class="story-four__box" animate-in="fly-in-left" animate-in-duration="2s" style="transform: translate(-1280px, 0px);">
+
+        <span>Получите запись практикума NGINX by REBRAIN за регистрацию</span>
+
+        <span id="min">Запись можно получить, только если вы присутствуете на ивенте</span>
+
+
+      </div>
+    </div>
+  </div>
+
+</amp-story-grid-layer> -->
+
+
+      <amp-story-cta-layer template="fill">
+        <div class="wrapp">
+          <div class="story">
+            <div class="story-four__box_btn">
+              <span>Получите запись практикума NGINX by REBRAIN за регистрацию</span>
+              <div class="ctaBtn fadeInDesktop" >
+                <a href="./registration.html" class="cta" rel="nofollow" target="_blank" role="link">
+                  Регистрируйся прямо сейчас
+                </a>
+              </div>
+              <span id="min">Запись можно получить, только если вы присутствуете на ивенте</span>
+            </div>
+          </div>
+        </div>
+      </amp-story-cta-layer>
+
+
+    </amp-story-page>
+
+
+
+
+
+
+
+    <!-- <amp-story-bookend src="https://amp.dev/static/samples/json/bookend.json" layout="nodisplay">
+    </amp-story-bookend> -->
+
+  </amp-story>
+</body>
+
+</html>
