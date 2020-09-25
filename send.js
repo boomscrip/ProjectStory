@@ -27,7 +27,7 @@ function checkInputs() {
   const userCheckValue = userCheck.checked;
 
 
-  console.log(userCheckValue);
+  // console.log(userCheckValue);
 
 
   if (userNameValue === '' || userNameValue == null) {
@@ -97,7 +97,7 @@ function checkInputs() {
     document.getElementById('cheking').style.cssText = "color:#A9A9A9;";
   }
 
-  console.log(verificationSuccess)
+  // console.log(verificationSuccess)
 }
 
 
@@ -127,12 +127,13 @@ function sendData() {
   }
   console.log(JSON.stringify(data));
 
+
   fetch("https://rebrainme.com/webinar-universal-signup", {
   method: "POST",
   body: JSON.stringify(data),
-  mode: 'no-cors',
+  mode: 'cors',
   headers: {
-    'Content-Type': 'application/json',
+    'Content-Type': 'application/x-www-form-urlencoded',
     "Accept": 'application/json',
   }
 
